@@ -1,0 +1,93 @@
+.mat-button {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.main-container {
+  width: 430px;
+}
+
+.company-btn {
+  text-transform: uppercase;
+  width: 50%;
+  color: rgb(81, 81, 81);
+  border: 3px solid  rgb(0, 140, 186);
+  padding: 0;
+  height: 60px;
+  box-shadow: 3px 3px 3px rgb(0, 0, 0, 0.2);
+}
+
+.left-btn {
+  border-radius: 50px 0px 0px 50px;
+}
+
+.right-btn {
+  border-radius: 0px 50px 50px 0px;
+}
+
+.main-container, .center {
+  margin: auto;
+}
+
+.sub-container > mat-form-field {
+  width: 100%;
+  color: rgb(206, 206, 206);
+  font-family: "Roboto", "Helvetica Neue", "sans-serif";
+}
+
+.sub-container {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  margin-top: 150px;
+  width: 150px;
+}
+
+.grey {
+  color: rgb(148, 148, 148);
+  margin-bottom: 5px;
+  font-weight: 300;
+}
+
+.btn-register {
+  text-transform: uppercase;
+  background-color: rgb(0, 140, 186);
+  color: white;
+  width: 70%;
+  border-radius: 50px;
+  height: 50px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+  font-weight: lighter;
+}
+
+.main-text, .second-text {
+  color: rgb(81, 81, 81);
+}
+
+.second-text > span {
+  font-weight: bold;
+}
+
+.second-text > a {
+  padding-left: 10px;
+}
+
+a {
+  color: rgb(87, 177, 203);
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.selected {
+  background-color: rgb(0, 140, 186);
+  color: white;
+  border: rgb(0, 140, 186);
+}

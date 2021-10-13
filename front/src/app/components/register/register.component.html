@@ -1,0 +1,69 @@
+<div class="main-container">
+  <div class="sub-container">
+    <img src="../../assets/Fretly-logo.png" alt="Fretly Logo"/>
+  </div>
+
+  <p class="grey">Profil de l'entreprise</p>
+
+  <div class="sub-container center">
+    <button
+      mat-button
+      class="left-btn company-btn"
+      (click)="setType('transporteur')"
+      [class.selected] = "user.type === 'transporteur'"
+    >
+      Transporteur
+    </button>
+    <button
+      mat-button
+      class="right-btn company-btn"
+      (click)="setType('chargeur')"
+      [class.selected] = "user.type === 'chargeur'"
+    >
+      Chargeur
+    </button>
+  </div>
+
+  <div class="sub-container">
+    <mat-form-field appearance="standard">
+      <input
+        matInput
+        placeholder="Email"
+        type="text"
+        class="form-control"
+        id="email"
+        required
+        [(ngModel)]="user.email"
+        name="email"
+      />
+    </mat-form-field>
+  </div>
+
+  <div class="sub-container">
+    <mat-form-field appearance="standard">
+      <input
+        matInput
+        placeholder="Saisir un mot de passe"
+        class="form-control"
+        type="password"
+        id="password"
+        required
+        [(ngModel)]="user.password"
+        name="password"
+      />
+    </mat-form-field>
+  </div>
+
+  <p class="error">{{existingUser}}</p>
+  <p class="error">{{error}}</p>
+  <p class="main-text">Tous les champs sont obligatoires <br/> L'inscription à Fretly entraîne l'acceptation des <a [routerLink]="['/']">Conditions Générales d'Utilisation</a> de la plateforme</p>
+
+  <div class="sub-container">
+    <button mat-button (click)="register()" class="btn-register center">S'inscrire</button>
+  </div>
+
+  <br/>
+  <div class="sub-container">
+    <p class="second-text"><span class="sub-text">Vous avez déjà un compte?</span><a [routerLink]="['/sign-in']">Connectez-vous</a></p>
+  </div>
+</div>
